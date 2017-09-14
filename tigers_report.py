@@ -6,7 +6,6 @@ def main():
 	message = createReportMessage()
 	print(message)
     
-# 試合速報メッセージ作成
 def createReportMessage():
     teamNameList = []
     teamPointList = []
@@ -14,47 +13,46 @@ def createReportMessage():
     url = 'https://m.hanshintigers.jp/game/score/'
     headers = {'User-Agent': 'YOUR-USER-AGENT'}
     request = requests.get(url, headers=headers)
-    # HTMLパーサ
     soup = BeautifulSoup(request.text, 'lxml')
-    # 現在のイニング
+    # now inning
     inning = soup.find(class_='inning').text
 
-    # 両チームの名前取得
+    # get team names
     for i in soup.find_all('img', src=re.compile("/images/logo/logo_")):
         teamNameList.append(i['src'])
 
-    # 両チームの点数取得
+    # get team points
     for i in soup.find_all(class_='number'):
         teamPointList.append(i.text)
 
-    # 両チームの名前と点数をセット
+    # set team names and points
     for i, team in enumerate(teamNameList):
-        # 阪神の場合
+        # TIGERS
         if team == '/images/logo/logo_t.png':
             tigers_name = "阪神"
             tigers_number = teamPointList[i]
-        # 広島の場合
+        # CARP
         elif team == '/images/logo/logo_c.png':
             opponent_name = "広島"
             opponent_number = teamPointList[i]
-        # 巨人の場合
+        # GIANTS
         elif team == '/images/logo/logo_g.png':
             opponent_name = "巨人"
             opponent_number = teamPointList[i]
-        # 中日の場合
+        # DRAGONS
         elif team == '/images/logo/logo_d.png':
             opponent_name = "中日"
             opponent_number = teamPointList[i]
-        # ヤクルトの場合
+        # SWAROWS
         elif team == '/images/logo/logo_s.png':
             opponent_name = "ヤクルト"
             opponent_number = teamPointList[i]
-        # 横浜の場合
+        # BAYSTARS
         elif team == '/images/logo/logo_db.png':
             opponent_name = "横浜"
             opponent_number = teamPointList[i]
 
-    # メッセージ生成
+    # generate message
     message = inning + '\n' + tigers_name + tigers_number + ' - ' + opponent_number + opponent_name
     return message
 
