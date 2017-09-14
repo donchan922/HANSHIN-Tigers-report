@@ -11,7 +11,7 @@ def createReportMessage():
     teamPointList = []
 
     url = 'https://m.hanshintigers.jp/game/score/'
-　　　　　　　　# replace YOUR-USER-AGENT to your User-Agent
+    # replace YOUR-USER-AGENT to your User-Agent
     headers = {'User-Agent': 'YOUR-USER-AGENT'}
     request = requests.get(url, headers=headers)
     soup = BeautifulSoup(request.text, 'lxml')
