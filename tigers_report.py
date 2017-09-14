@@ -11,12 +11,12 @@ def createReportMessage():
     teamPointList = []
 
     url = 'https://m.hanshintigers.jp/game/score/'
+　　　　　　　　# replace YOUR-USER-AGENT to your User-Agent
     headers = {'User-Agent': 'YOUR-USER-AGENT'}
     request = requests.get(url, headers=headers)
     soup = BeautifulSoup(request.text, 'lxml')
     # now inning
     inning = soup.find(class_='inning').text
-
     # get team names
     for i in soup.find_all('img', src=re.compile("/images/logo/logo_")):
         teamNameList.append(i['src'])
