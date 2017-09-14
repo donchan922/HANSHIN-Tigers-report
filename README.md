@@ -20,6 +20,16 @@ $ cd
 $ git clone https://github.com/daipanman/HANSHIN-Tigers-report.git
 ```
 
+Modify software:
+```
+$ vi ~/HANSHIN-Tigers-report/tigers_report.py
+
+...
+
+# replace YOUR-USER-AGENT to your User-Agent
+headers = {'User-Agent': 'YOUR-USER-AGENT'}
+```
+
 Execute following command:
 ```sh
 $ python ~/HANSHIN-Tigers-report/tigers_report.py
