@@ -17,7 +17,7 @@ $ pip install lxml
 Clone software:
 ```sh
 $ cd
-$ https://github.com/daipanman/HANSHIN-Tigers-report.git
+$ git https://github.com/daipanman/HANSHIN-Tigers-report.git
 ```
 
 Execute following command:
