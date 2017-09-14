@@ -30,6 +30,7 @@ result (for example):
 試合終了
 阪神2 - 7巨人
 ```
+Fight! Fight! HANSHIN Tigers!
 
 ## Licence
 MIT
