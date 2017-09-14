@@ -42,5 +42,5 @@ result (for example):
 ```
 Fight! Fight! HANSHIN Tigers!
 
-## Licence
+## License
 This software is released under the MIT License, see LICENSE.
