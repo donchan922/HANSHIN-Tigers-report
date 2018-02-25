@@ -8,20 +8,20 @@ HANSHIN-Tigers-report requires the following to run:
 
 ## Usage
 Install python libraries:
-```sh
+```bash
 $ pip install requests
 $ pip install beautifulsoup4
 $ pip install lxml
 ```
 
 Clone software:
-```sh
+```bash
 $ cd
 $ git clone https://github.com/donchan922/HANSHIN-Tigers-report.git
 ```
 
 Modify software:
-```
+```bash
 $ vi ~/HANSHIN-Tigers-report/tigers_report.py
 
 ...
@@ -31,12 +31,12 @@ headers = {'User-Agent': 'YOUR-USER-AGENT'}
 ```
 
 Execute following command:
-```sh
+```bash
 $ python ~/HANSHIN-Tigers-report/tigers_report.py
 ```
 
 result (for example):
-```sh
+```bash
 試合終了
 阪神2 - 7巨人
 ```
