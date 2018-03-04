@@ -38,7 +38,7 @@ $ python ~/HANSHIN-Tigers-report/tigers_report.py
 result (for example):
 ```bash
 試合終了
-巨人7 - 神2
+巨7 - 神2
 ```
 Fight! Fight! HANSHIN Tigers!
 
