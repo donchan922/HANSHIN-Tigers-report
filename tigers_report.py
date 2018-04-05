@@ -24,8 +24,8 @@ def createReportMessage():
     
     home_team_name = soup.find(class_='l_left').text
     away_team_name = soup.find(class_='l_right').text
-    home_team_point = teamPointList[1]
-    away_team_point = teamPointList[0]
+    home_team_point = teamPointList[0]
+    away_team_point = teamPointList[1]
 
     # generate message
     message = inning + '\n' + home_team_name + home_team_point + ' - ' + away_team_name + away_team_point
