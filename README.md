@@ -16,13 +16,13 @@ $ pip install lxml
 
 Clone software:
 ```bash
-$ cd
 $ git clone https://github.com/donchan922/HANSHIN-Tigers-report.git
+$ cd
 ```
 
 Modify software:
 ```bash
-$ vi HANSHIN-Tigers-report/tigers_report.py
+$ vi tigers_report.py
 
 # replace YOUR-USER-AGENT to your User-Agent (ex. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36)
 headers = {'User-Agent': 'YOUR-USER-AGENT'}
@@ -30,7 +30,7 @@ headers = {'User-Agent': 'YOUR-USER-AGENT'}
 
 Execute following command:
 ```bash
-$ python ~/HANSHIN-Tigers-report/tigers_report.py
+$ python tigers_report.py
 ```
 
 result (for example):
