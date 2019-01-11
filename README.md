@@ -4,7 +4,7 @@ It tells you HANSHIN Tigers (Japanese STRONG Baseball Team) report.
 ## Requirements
 HANSHIN-Tigers-report requires the following to run:
 
-- Python 3.x
+- Python 3.4+
 
 ## Usage
 Install python libraries:
@@ -24,7 +24,7 @@ Modify software:
 ```bash
 $ vi tigers_report.py
 
-# replace YOUR-USER-AGENT to your User-Agent (ex. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36)
+# replace YOUR-USER-AGENT to your User-Agent (e.g. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36)
 headers = {'User-Agent': 'YOUR-USER-AGENT'}
 ```
 
