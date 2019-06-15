@@ -42,5 +42,15 @@ result (for example).
 
 Fight! Fight! HANSHIN Tigers!
 
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome.
+
+## 👤 Author
+- Twitter: [@donchan922](https://twitter.com/donchan922)
+- Github: [donchan922](https://github.com/donchan922)
+
+## ⭐️ Show your support
+Please STAR this repository if this software helped you!
+
 ## 📝 License
 This software is released under the MIT License.
