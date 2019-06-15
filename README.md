@@ -1,26 +1,25 @@
 # HANSHIN-Tigers-report
-It tells you HANSHIN Tigers (Japanese STRONG Baseball Team) report.
+Tell you HANSHIN Tigers (Japanese STRONG Baseball Team) report.
 
-## Requirements
-HANSHIN-Tigers-report requires the following to run:
-
+## ✅ Requirements
 - Python 3.4+
 
-## Usage
 Install python libraries:
+
 ```bash
 $ pip install requests
 $ pip install beautifulsoup4
 $ pip install lxml
 ```
 
-Clone software:
+## 🚀 Usage
 ```bash
 $ git clone https://github.com/donchan922/HANSHIN-Tigers-report.git
 $ cd HANSHIN-Tigers-report
 ```
 
-Modify software:
+Modify following file.
+
 ```bash
 $ vi tigers_report.py
 
@@ -28,17 +27,20 @@ $ vi tigers_report.py
 headers = {'User-Agent': 'YOUR-USER-AGENT'}
 ```
 
-Execute following command:
+Execute following command.
+
 ```bash
 $ python tigers_report.py
 ```
 
-result (for example):
+result (for example).
+
 ```bash
 試合終了
 巨7 - 神2
 ```
+
 Fight! Fight! HANSHIN Tigers!
 
-## License
-This software is released under the MIT License, see LICENSE.
+## 📝 License
+This software is released under the MIT License.
